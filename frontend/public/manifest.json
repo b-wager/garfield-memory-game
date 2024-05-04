@@ -1,0 +1,15 @@
+{
+  "short_name": "Memory Game",
+  "name": "The Garfield Memory Game",
+  "icons": [
+    {
+      "src": "garfield_icon.jpeg",
+      "sizes": "300x300",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

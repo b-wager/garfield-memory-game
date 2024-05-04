@@ -1,0 +1,125 @@
+body {
+    color: #333333;
+    background-color: white;
+    margin: 24px;
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+}
+
+#panel {
+    width: 480px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    color: blue;
+}
+
+#card-styles {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    column-gap: 64px;
+    row-gap: 64px;
+}
+
+.row {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 64px;
+    margin: 32px 64px;
+}
+
+.revealed-card, .hidden-card, .chosen-card, .card-back, .card-back-chosen{
+    width: 128px;
+    height: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.revealed-card {
+    background-color: #eeeeee;
+}
+
+.hidden-card, .card-back-chosen {
+    border: solid #666666 2px;
+}
+
+.hidden-card:hover, .select:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.hidden-card image, .card-back image, .card-back-chosen image {
+    width: 100%;
+    height: 100%;
+}
+
+.chosen-card {
+    border: solid #666666 2px;
+}
+
+.card-back {
+    border: solid #666666 2px;
+    opacity: 0.5;
+}
+
+.card-back:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#win-box {
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    margin: 30%;
+    width: 512px;
+    height: 196px;
+    font-size: 32px;
+    background-color: white;
+    border: solid black 4px;
+}
+
+.play-again {
+    background-color: #1966e4;
+    border: solid black 2px;
+    font-size: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.select{
+    border: solid black 2px;
+    font-size: 24px;
+    padding: 64px;
+    margin: 32px;
+    background-color: white;
+}
+
+.selectBox{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.selectText{
+    font-size: 32px;
+}
